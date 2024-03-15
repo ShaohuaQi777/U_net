@@ -52,8 +52,6 @@ def train_model():
     plt.xticks([])
     plt.yticks([])
 
-    # 可视化真实标签（如果可用）
-    # 假设你有一个相应的真实标签数组 label_test
     plt.subplot(1, 3, 2)
     true_label = np.argmax(label_test[index_to_visualize], axis=-1)  # 只有当label_test是one-hot编码时才需要
     plt.imshow(true_label, cmap='jet', interpolation='nearest')
